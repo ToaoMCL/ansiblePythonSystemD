@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('run app') {
             steps {
-              ls
+              sh 'ls'
               sh 'ansible-playbook -v playbook.yaml' 
             }
         }
