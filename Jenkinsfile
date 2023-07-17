@@ -10,7 +10,7 @@ pipeline {
             steps {
               sh 'ls' 
               sh 'export PATH=$PATH:$HOME/.local/bin'
-              sh 'ansible-playbook -v playbook.yaml' 
+              sh 'ansible-playbook -v -i inventory.yaml playbook.yaml' 
             }
         }
 
