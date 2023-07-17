@@ -1,0 +1,19 @@
+- hosts: localhost
+  become: yes
+  ignore_errors: yes
+  roles:
+
+    - env
+    - python
+    - running
+    
+
+
+     
+
+    
+    
+    
+
+    
+  
