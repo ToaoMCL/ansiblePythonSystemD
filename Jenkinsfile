@@ -11,7 +11,6 @@ pipeline {
               sh 'pwd'
               sh 'whoami'
               sh 'ls'
-              sh 'bash runsed.sh'
               sh 'export PATH=$PATH:$HOME/.local/bin'
               sh 'export PATH=$PATH:$HOME/.local/bin ; ansible-playbook -v -i inventory.yaml playbook.yaml'
             }
