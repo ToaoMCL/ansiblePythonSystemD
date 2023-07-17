@@ -8,7 +8,8 @@ pipeline {
     stages {
         stage('run app') {
             steps {
-              sh 'ls'
+              sh 'ls' 
+              sh 'export PATH=$PATH:$HOME/.local/bin'
               sh 'ansible-playbook -v playbook.yaml' 
             }
         }
