@@ -8,6 +8,8 @@ pipeline {
     stages {
         stage('run app') {
             steps {
+              sh 'pwd'
+              sh 'whoami'
               sh 'ls' 
               sh 'export PATH=$PATH:$HOME/.local/bin'
               sh 'ansible-playbook -v -i inventory.yaml playbook.yaml' 
