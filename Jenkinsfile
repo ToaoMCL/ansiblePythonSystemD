@@ -12,7 +12,7 @@ pipeline {
               sh 'whoami'
               sh 'ls' 
               sh 'export PATH=$PATH:$HOME/.local/bin'
-              sh 'ansible-playbook -v -i inventory.yaml playbook.yaml' 
+              sh 'export PATH=$PATH:$HOME/.local/bin ; ansible-playbook -v -i inventory.yaml playbook.yaml' 
             }
         }
 
